@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,434;1,14..32,434&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>TechSolutions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar  fixed-top">
+      <div class="container-fluid">
+
+        <img src="/images/code.png" alt="foto-codigo-logo">
+
+        <a class="navbar-link navbar-brand " href="#">TechSolutions</a>
+          
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+          
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">TechSolutions</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#Servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#Testimonios">Testimonios</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#Contacto">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </nav>
+
+    <!-- Presentation Section-->
+     <section class="container-fluid">
+      <div class="presentation">
+        <div class="container">
+          
+          <div class="col-lg-6">
+            <h1>
+              Code.
+              <br>Transform.
+              <br>Deploy.
+            </h1>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="img-presentation">
+              <img src="/images/pngtree-woman-coding.png" alt="imagen-presentacion">
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+     </section>
+
+    <!-- Hero Section -->
+    <section class="bg-image-section" id="Inicio">
+      <div class="hero">
+        <div class="container content-over-image">
+          <div class="row align-items-center">
+
+            <div class="col-lg-12">
+              <h2 class="display-4 fw-bold mb-4 text-white">TechSolutions</h1>
+            </div>
+
+            <div class="col-lg-12">
+              <h3 class="display-4 fw-bold mb-4 text-white">Transformamos ideas en soluciones digitales</h2>
+              <p class="lead mb-4 text-white">Desarrollamos software innovador y personalizado que impulsa el crecimiento de tu negocio. Con más de una década de experiencia, combinamos tecnología de vanguardia y metodologías ágiles para crear soluciones escalables que transforman tu visión en resultados medibles.</p>
+              <button class="btn btn-light btn-lg px-4">Comienza ahora</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="container-fluid" id="Servicios">
+      <div class="services">
+          <div class="container">
+            
+            <!-- Titulo de servicios-->
+            <div class="titulo-services col-lg-12">
+              <h2 class="display 4 fw-bold mb-4">Nuestros servicios</h2>
+            </div>
+
+            <!-- Seccion de tarjetas de servicios-->
+            <div class="services-cards col-lg-12">
+              
+              <!-- Card-->
+              <div class="card col-lg-8" style="width: 18rem;">
+                <img src="/images/icono-desarrollo-web.png" class="card-img-top" alt="icono-web">
+                <div class="card-body">
+                  <h5 class="card-title">Desarrollo Web</h5>
+                  <p class="card-text">Creamos sitios web modernos y responsivos que cautivan a tu audiencia.</p>
+                </div>
+              </div>
+              
+              <!-- Card-->
+              <div class="card col-lg-4" style="width: 18rem;">
+                <img src="/images/shopping_cart.png" class="card-img-top" alt="icono-web">
+                <div class="card-body">
+                  <h5 class="card-title">E-commerce</h5>
+                  <p class="card-text">Implementamos soluciones de comercio electrónico escalables y seguras.</p>
+                </div>
+              </div>
+              
+              <!-- Card-->
+              <div class="card col-lg-4" style="width: 18rem;">
+                <img src="/images/check_circle.png" class="card-img-top" alt="icono-web">
+                <div class="card-body">
+                  <h5 class="card-title">Consultoría Tech</h5>
+                  <p class="card-text">Asesoramos en la transformación digital de tu empresa.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="container-fluid" id="Testimonios">
+      <div class="testimonios-seccion">
+        <div class="container">
+
+          <!-- Titulo testimonios-->
+          <div class="titulo-testimonios col-lg-12">
+            <h2 class="display 4 fw-bold mb-4">Testimonios</h2>
+          </div>
+
+          <!-- Seccion de testimonios-->
+           <div class="testimonios-box col-lg-12">
+              
+            <!-- Testimonio 1-->
+            <div class="testimonio col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">"TechSolutions ha sido un aliado estratégico en la transformación digital de nuestra empresa. Su equipo de expertos ha desarrollado soluciones innovadoras que han impulsado nuestro crecimiento."</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">- Juan Pérez, CEO de Empresa X</small>
+                </div>
+              </div>    
+            </div>
+
+            <!-- Testimonio 2-->
+            <div class="testimonio col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">"Gracias a TechSolutions, hemos logrado mejorar la experiencia de nuestros clientes y aumentar nuestras ventas. Su equipo de desarrollo es altamente calificado y comprometido."</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">- María Rodríguez, Gerente de Marketing de Empresa Y</small>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Testimonio 3-->
+            <div class="testimonio col-lg-4">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-text">"TechSolutions ha superado nuestras expectativas. Su equipo de desarrollo es altamente calificado y comprometido. Recomendamos sus servicios a cualquier empresa que busque soluciones digitales innovadoras."</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted">- Carlos Gómez, CTO de Empresa Z</small>
+                </div>
+              </div>
+            </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contacto-container container-fluid" id="Contacto">
+      <div class="contacto-seccion">
+        <div class="container">
+          
+          <!-- Formulario de contacto-->
+           <div class="formulario">
+            <form class="row g-3">
+              
+              <div class="col-12">
+                <h3 class="display 4 fw-bold mb-4">¿Listo para comenzar tu proyecto?</h3>
+              </div>
+              
+              <div class="col-12">
+                <h5>Contáctanos hoy mismo y convierte tu visión en realidad</h5>
+              </div>
+              
+              <div class="email-input col-lg-12">
+                <input type="email" class="form-control form-control-lg" id="colFormLabelLg" placeholder="Tu email">
+              </div>
+
+              <div class="col-lg-12">
+                <button type="submit" class="btn btn-primary">Contactar</button>
+              </div>
+
+            </form>
+           </div>
+          
+        </div>
+      </div>  
+    </section> 
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      // Agrega una clase a la navbar cuando el usuario hace scroll
+      window.addEventListener('scroll', function() {
+          if (window.scrollY > 50) {
+              document.querySelector('.navbar').classList.add('scrolled');
+          } else {
+              document.querySelector('.navbar').classList.remove('scrolled');
+          }
+      });
+  
+      // Cierra el menú Offcanvas al hacer clic en un enlace
+      document.querySelectorAll('.nav-link').forEach(link => {
+          link.addEventListener('click', function() {
+              const offcanvas = document.querySelector('#offcanvasDarkNavbar');
+              const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvas); // Cambia getinstance a getInstance
+              if (bsOffcanvas) { // Verifica si existe la instancia
+                  bsOffcanvas.hide(); // Oculta el menú
+              }
+          });
+      });
+  </script>
+  
+</body>
+</html>

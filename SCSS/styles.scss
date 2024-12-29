@@ -1,0 +1,397 @@
+@import 'Variables';
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+.container-fluid, .container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    
+}
+
+/* Estilos para el navbar y la sección de presentación */
+.navbar {
+    height: 60px; /* Altura fija para el navbar */
+    transition: background-color 0.3s; /* Transición suave */
+    background-color: #fff;
+
+    .offcanvas{
+        .btn-close{
+            color: #4315d8;
+            font-size: 1.5rem;
+            font-family: $font-inter;
+            border-color: #042242;
+        }
+    }
+
+    .container-fluid{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        img{
+            max-height: 50px;
+        }
+
+        a{
+            font-family: $font-inter;
+            font-size: 1.5rem;
+            color: #4315d8;
+        }
+
+        .navbar-toggler{
+            border-color: rgba(255, 255, 255, 0.1);
+            transition: color 0.3s;
+        }
+
+        
+    }
+}
+
+.presentation {
+    padding-top: 60px; /* Mismo valor que la altura del navbar */
+    min-height: 100vh; /* Altura mínima de la pantalla completa */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        h1 {
+            font-size: 5rem;
+            font-family: $font-inter;
+            color: #4315d8;
+            font-weight: bold;
+            line-height: 1.2;
+            width: 100%;
+
+        }
+
+        .img-presentation{
+            img{
+                max-width: 90%;
+                width: 100%;
+            }
+        }
+    }
+    
+    @media (max-width: 468px){
+        .container{
+            flex-direction: column;
+
+            div{
+            
+                h1{
+                    margin-bottom: 20px;
+                    font-size: 3.5rem;
+                }
+
+                .img-presentation{
+                    img{
+                        max-width: 100%;
+                    }
+                }
+            }    
+        }
+    }
+}
+
+
+
+
+.bg-image-section{
+    position: relative;
+    background-image: url(../images/ingenieria-informatica.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+    .hero{
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+
+        h2{
+            font-size: 4rem;
+            font-family: $font-inter;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        h3{
+            font-size: 2rem;
+            font-family: $font-inter;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        p{
+            font-size: 1.5rem;
+            font-family: $font-inter;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        button{
+            display: block;
+            margin: 0 auto;
+            padding: 0.5rem 1rem;
+            font-size: 1.5rem;
+            color: #fff;
+            background-color: #4315d8;
+            border: none;
+            border-radius: 9999px;
+            cursor: pointer;
+            transition: background-color 0.5s;
+            font-family: $font-inter;
+
+            &:hover{
+                background-color: #042242;
+            }
+        }
+    }
+
+    @media (max-width: 768px){
+        .hero{
+            height: 400px;
+            h2{
+                font-size: 3rem;
+            }
+
+            h3{
+                font-size: 1.5rem;
+            }
+
+            p{
+                font-size: 1rem;
+            }
+
+            button{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.bg-image-section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    
+    .titulo-services{
+        text-align: center;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+        padding-top: 2rem;
+
+        h2{
+            font-size: 2rem;
+            font-family: $font-inter;
+            color: #4315d8;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .services-cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+
+        .card{
+            width: 300px;
+            padding: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.5s;
+            cursor: pointer;
+
+            &:hover{
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            }
+
+            .card-img-top{
+                width: 20%;
+                border-radius: 10px;
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+            }
+
+            .card-body{
+                justify-content: center;
+                text-align: center;
+                h5{
+                    font-size: 1.5rem;
+                    font-family: $font-inter;
+                    margin-bottom: 1rem;
+                    color: #4315d8;
+                }
+
+                p{
+                    font-size: 1rem;
+                    font-family: $font-inter;
+                }
+            }    
+        }
+    }
+}
+
+.testimonios-seccion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8rem;
+    
+    
+    .titulo-testimonios{
+        text-align: center;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+        padding-top: 2rem;
+
+        h2{
+            font-size: 2rem;
+            font-family: $font-inter;
+            color: #4315d8;
+            margin-bottom: 1rem;
+        }
+    }
+
+    .testimonios-box{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        
+        .testimonio{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .card{
+                width: 80%;
+                padding: 1rem;
+                margin-top: 2rem;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                transition: box-shadow 0.5s;
+
+                &:hover{
+                    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+                }
+
+                .card-body{
+                    justify-content: center;
+                    text-align: center;
+
+                    p{
+                        font-family: $font-inter;
+                        font-size: 0.9rem;
+                        margin-bottom: 1rem;
+
+                    }
+                }
+
+                .card-footer{
+                    display: flex;
+                    align-items: start;
+                    justify-content: center;
+
+                    .text-muted{
+                        font-family: $font-inter;
+                        font-size: 0.8rem;
+                        color: #4315d8;
+                    }
+                }
+                
+            }
+        }    
+    }
+}
+
+.contacto-container{
+    background-color: #042242;
+    color: #fff;
+    
+    .contacto-seccion{
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        display: flex;
+        
+        .formulario{
+
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding-bottom: 0;
+
+                h3{
+                    font-size: 2rem;
+                    font-family: $font-inter;
+                    color: #fff;
+                }
+
+                h5{
+                    font-size: 1.3rem;
+                    font-family: $font-inter;
+                    color: #fff;
+                }
+
+                .btn{
+                    display: block;
+                    margin: 0 auto;
+                    padding: 0.5rem 1rem;
+                    font-size: 1.2rem;
+                    color: #fff;
+                    background-color: #4315d8;
+                    border: none;
+                    border-radius: 9999px;
+                    cursor: pointer;
+                    transition: background-color 0.5s;
+                    font-family: $font-inter;
+                    margin-top: 1rem;
+
+                    &:hover{
+                        background-color:#042242;
+                    }
+                }
+            }
+        }
+    }
+}
