@@ -1,6 +1,7 @@
 # TechSolutions-Landing-page
 🚀 TechStart Landing Page
 Una moderna landing page para startup tecnológica, construida con HTML, CSS y Bootstrap 5. El diseño incluye efectos de parallax, transiciones suaves y un diseño totalmente responsive.
+
 📋 Características
 
 Diseño moderno y minimalista
